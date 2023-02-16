@@ -20,7 +20,7 @@ spec:
         app: demo-voting-app
     spec:
       containers:
-        - name: postgres
+        - name: postgres:12
           image: postgres
           ports:
             - containerPort: 5432
