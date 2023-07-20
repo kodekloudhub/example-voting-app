@@ -34,14 +34,14 @@ services:
       - back-tier
 
   redis:
-    image: redis:alpine
+    image: redis:latest
     container_name: redis
     ports: ["6379"]
     networks:
       - back-tier
 
   db:
-    image: postgres:9.4
+    image: postgres:latest
     container_name: db
     environment:
       POSTGRES_USER: "postgres"
